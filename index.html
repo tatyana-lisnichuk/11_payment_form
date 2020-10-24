@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Payment form</title>
+</head>
+<body>
+  <div class="wrapper">
+
+      <div class="bg_image">
+      
+        <div class="form_container">
+          <div class="header">
+            <div class="form_wrapper">
+              <div class="header_content">
+                <div class="text">
+                  <p><span class="name">Harold Finch</span><br>YOUR TOTAL</p>
+                </div>
+                <div class="price">$88</div>
+              </div>
+            </div>
+          </div>
+          
+          <form class="input_part form_wrapper" action="#" method="GET">
+            <!-- <div class="form_wrapper"> -->
+              <div class="credit_card_number">
+                <label for="card_number">Credit card number</label>
+                <br>
+                <input class="form_input" type="text" name="credit_card_number" id="card_number" data-mask="0000 0000 0000 0000" autocomplete="off" maxlength="16">
+              </div>
+              <div class="exp_date">
+              <label class="label_input" for="card_month card_year">Expiration date</label><br>
+            
+              <select class="month" name="month" id="card_month">
+                <option hidden disabled selected>Month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+              
+              </select>
+              <select class="year" name="year" id="card_year">
+                <option hidden disabled selected>Year</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+            
+              </select>
+              </div>
+              <div class="code">
+                <label class="label_input" for="cvv">
+                  CVV
+                </label>
+                <div class="cvv_input">
+                    <input class="form_input code_input" type="password" name="card_code" id="cvv" maxlength="4" minlength="3">
+                  <div class="digits">3 or 4 digits - <a href="#">view example</a>
+                  </div>
+                </div>
+            </div>
+              <input class="button_pay" type="submit" value="Pay">
+            <!-- </div> -->
+            </form>
+            <!-- <div class= "form_wrapper"> -->
+            
+              <hr class="line form_wrapper">
+              
+            <div class="cancel form_wrapper"><a href="#">Cancel order</a></div>
+            <!-- </div> -->
+        </div>
+      </div>
+      
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/plugins/jquery.mask.min.js"></script>
+</body>
+</html>

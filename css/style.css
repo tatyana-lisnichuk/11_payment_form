@@ -1,0 +1,139 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #4f5456;
+}
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  margin: auto;
+  max-width: 800px;
+  min-height: 600px;
+  /* background-color: aqua; */
+  color: #6c7d79;
+}
+.bg_image {
+  height: 600px;
+  background-image: url(../img/unsplash.png);
+  background-repeat: no-repeat;
+  background-position: 350px -400px;
+  padding-top: 15px;
+}
+.form_container {
+  max-width: 337px;
+  min-height: 535px;
+  background: #f6f6f6;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  height: calc(72 / 535 * 100%);
+  background-color: #eee4aa;
+}
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  padding: 18px 0px 18px 0px;
+}
+.name {
+  font-weight: 700;
+  font-size: 14px;
+}
+.price {
+  font-size: 36px;
+  font-weight: bold;
+}
+.form_wrapper {
+  width: calc(290 / 338 * 100%);
+  margin: 0 auto;
+  /* background-color: thistle; */
+}
+.input_part {
+  font-size: 14px;
+  margin-top: 38px;
+}
+.form_input {
+  width: 100%;
+}
+.form_input,
+select {
+  font-size: 14px;
+  padding: 12px 0px;
+  border: 2px solid #b4c1c4;
+  color: #919b9d;
+}
+input,
+select {
+  margin-top: 8px;
+  outline: none;
+}
+.form_input:focus,
+select:focus {
+  border: 2px solid #7fcddf;
+  outline: none;
+}
+.credit_card_number,
+.code,
+.exp_date {
+  margin-bottom: 23px;
+}
+.month {
+  width: calc(176 / 288 * 100%);
+  margin-right: 12px;
+}
+.year {
+  width: calc(96 / 288 * 100%);
+}
+.code_input {
+  width: calc(95 / 288 * 100%);
+}
+.cvv_input {
+  display: flex;
+  /* background-color: tomato; */
+  font-size: 12px;
+}
+.digits {
+  padding-left: 10px;
+  padding-top: 20px;
+  font-weight: 600;
+}
+.button_pay {
+  width: 100%;
+  background-color: #26b167;
+  color: #fff;
+  outline: none;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 0;
+  border: 1px solid;
+  cursor: pointer;
+}
+.button_pay:hover {
+  background-color: #7fcddf;
+  color: #6c7d79;
+  transition: 0.2s ease-in;
+}
+.cancel {
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+.line {
+  height: 1px;
+  margin: 30px 7%;
+  border: none;
+  background-color: #edf0f1;
+}
+li a,
+a:visited {
+  color: currentColor;
+  font-weight: 600;
+}
+a:hover {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #dbe1e1;
+}
